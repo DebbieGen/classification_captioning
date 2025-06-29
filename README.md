@@ -1,39 +1,62 @@
-# Classification and Captioning Aircraft Damage Using Pretrained Models Overview
-The goal of this project is to develop an automated model that accurately classifies aircraft damage from images. By the end of the project, you will have trained and evaluated a model that utilizes feature extraction from VGG16 for damage classification. This model will be applicable in real-world damage detection within the aviation industry. Furthermore, the project will showcase how we can use a Transformer-based model to caption and summarize images, providing a detailed description of the damage.
+# 🧠 IBM Project: Image Classification and Captioning
 
-- A trained model capable of classifying aircraft images into "dent" and "crack" categories, enabling automated aircraft damage detection.
-- A Transformer-based model that generates captions and summaries of images
+---
 
-## Files
-You will be using the [Aircraft dataset](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/ZjXM4RKxlBK9__ZjHBLl5A/aircraft-damage-dataset-v1.tar).
-The dataset is taken from the here (Original Source): [Roboflow Aircraft Dataset](https://universe.roboflow.com/youssef-donia-fhktl/aircraft-damage-detection-1j9qk) Provided by a Roboflow user, License: CC BY 4.
+## 📌 Overview
 
-## Installation
-- pip install pandas 2.2.3
-- pip install tensorflow 2.17.1
-- pip install pillow 11.1.0
-- pip install matplotlib 3.9.2
-- pip install transformers 4.38.2
-- pip install torch
+This IBM project combines **image classification** and **image captioning** into a unified deep learning pipeline using CNNs and Transformer models. The model takes an image as input, predicts its category, and generates a descriptive caption — showcasing the power of **vision-language modeling**.
 
-- import zipfile
-- import keras
+---
 
-  from keras.models import Sequential, Model
+## 🚀 Features
 
-  from keras.layers import Dense, Dropout, Flatten
+- Image classification using pre-trained VGG16
+- Caption generation with BLIP Transformer from HuggingFace
+- End-to-end training in a Jupyter Notebook
+- Accuracy and BLEU score evaluation
+- Visual examples of predictions and captions
 
-  from keras.applications import VGG16
+---
 
-  from keras.optimizers import Adam
+## 📁 Files
 
-- import tensorflow as tf
+- IBM_Project_Classification_and_Captioning.ipynb: Main notebook with full pipeline
 
-  from tensorflow.keras.preprocessing.image import ImageDataGenerator
+- aircraft_damage_dataset_v1: Aircraft images labeled either as 'dent' or 'crack' split into train, valid, and test sets. Dataset is taken from the Roboflow Aircraft Dataset (https://universe.roboflow.com/youssef-donia-fhktl/aircraft-damage-detection-1j9qk) Provided by a Roboflow user, License: CC BY 4.
 
-- import matplotlib.pyplot as plt
-- import numpy as np
+## 📚 Dependencies
 
-  from keras.preprocessing import image
+Key libraries used:
 
-- import random
+- TensorFlow / Keras
+
+- HuggingFace Transformers (BLIP)
+
+- Pillow
+
+- Matplotlib, NumPy
+
+- Jupyter
+
+---
+
+## 🧪 Usage
+To run the project:
+
+jupyter notebook IBM_Project_Classification_and_Captioning.ipynb
+
+Then follow the cells in order to:
+
+- Load and preprocess image data
+
+- Train the classification model
+
+- Generate captions
+
+- Evaluate predictions
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
